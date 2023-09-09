@@ -1,0 +1,46 @@
+<!--Badger-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Programmer Calculator</title>
+	<link rel="icon" type="image/png" href="./icon.ico"/>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="calculator">
+		<input id="display" type="text">
+		<div class="buttons">
+			<button onclick="switchBase(2)">BIN</button>
+			<button onclick="switchBase(8)">OCT</button>
+			<button onclick="switchBase(10)">DEC</button>
+			<button onclick="switchBase(16)">HEX</button>
+			<button onclick="appendValue('0')">0</button>
+			<button onclick="appendValue('1')">1</button>
+			<button onclick="appendValue('2')">2</button>
+			<button onclick="appendValue('3')">3</button>
+			<button onclick="appendValue('4')">4</button>
+			<button onclick="appendValue('5')">5</button>
+			<button onclick="appendValue('6')">6</button>
+			<button onclick="appendValue('7')">7</button>
+			<button onclick="appendValue('8')">8</button>
+			<button onclick="appendValue('9')">9</button>
+			<button id="hexAlphabetDropdown" disabled>Hex Alphabet</button>
+			<button onclick="appendOperator('+')">+</button>
+			<button onclick="appendOperator('-')">-</button>
+			<button onclick="appendOperator('*')">*</button>
+			<button onclick="appendOperator('/')">/</button>
+			<button onclick="appendOperator('%')">%</button>
+			<button onclick="appendOperator('&')">AND</button>
+			<button onclick="appendOperator('|')">OR</button>
+			<button onclick="appendOperator('^')">XOR</button>
+			<button onclick="leftShift()"><<</button>
+			<button onclick="rightShift()">>></button>
+			<button onclick="calculateResult()">=</button>
+			<button onclick="clearDisplay()">C</button>
+			<button onclick="appendAns()">ANS</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

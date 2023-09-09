@@ -1,0 +1,58 @@
+/* Badger */
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #2c3e50; /* Dark background color */
+	font-family: Arial, sans-serif;
+}
+
+.calculator {
+	text-align: center;
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	background: linear-gradient(to bottom, #34495e, #283747); /* Gradient background */
+	color: #ecf0f1; /* Text color */
+}
+
+#display {
+	width: 90%;
+	font-size: 24px;
+	padding: 10px;
+	background: linear-gradient(to bottom, #2c3e50, #212f3c); /* Gradient background for input */
+	border: none;
+	border-radius: 5px;
+	color: #ecf0f1; /* Text color */
+	margin: 0;
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	margin-top: 20px;
+}
+
+button {
+	font-size: 18px;
+	padding: 15px;
+	cursor: pointer;
+	background-color: #3498db; /* Button background color */
+	border: none;
+	border-radius: 5px;
+	color: #ecf0f1; /* Text color */
+}
+
+button:disabled {
+	background-color: #95a5a6; /* Disabled button background color */
+	cursor: not-allowed;
+}
+
+/* Hover effect for buttons */
+button:hover {
+	background-color: #2980b9; /* Button background color on hover */
+}
